@@ -1,4 +1,4 @@
-@use './utils/variables';
+@use './utils/variables' as *;
 @use './blocks/header/header';
 @use './blocks/nav/nav';
 @use './blocks/card/card';
@@ -14,8 +14,8 @@ body {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
-  gap: $gap-y $gap-x;
-  padding: $padding-y $padding-x;
+  gap: variables.$gap-y variables.$gap-x;
+  padding: variables.$padding-y variables.$padding-x;
 
   @media (min-width: 488px) {
     grid-template-columns: repeat(2, $card-width);

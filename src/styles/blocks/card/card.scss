@@ -1,4 +1,4 @@
-@use '../utils/variables' as *;
+@use '../../utils/variables' as *;
 
 .card {
   width: $card-width;
@@ -33,14 +33,14 @@
     margin-bottom: 10px;
   }
 
-  &__button {
+  &__buy {
     display: inline-block;
     margin-bottom: 16px;
     padding: 8px 16px;
     border: 1px solid $nav-hover;
     border-radius: 4px;
     background-color: $nav-hover;
-    color: #fff;
+    color: $color-white;
     text-decoration: none;
     transition: all $transition;
 
